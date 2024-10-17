@@ -11,14 +11,7 @@ app.use(cors(
         origin: '*'
     }
 ))
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*')
-})
 app.set("view engine", "ejs")
-
-
-
-
 
 app.get('/', (req, res) => {
     console.log('nav page request received')
