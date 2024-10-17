@@ -21,6 +21,7 @@ app.set("view engine", "ejs")
 
 
 app.get('/', (req, res) => {
+    console.log('nav page request received')
     res.render("nav");
 })
 
