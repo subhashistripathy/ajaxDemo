@@ -1,10 +1,12 @@
 const express = require('express')
 const morgan = require('morgan')
+const cors = require('cors')
 const app = express()
 const port = 3000
 
 app.use(morgan("dev"))
 app.use(express.static("public"))
+app.use(cors())
 app.set("view engine", "ejs")
 
 
