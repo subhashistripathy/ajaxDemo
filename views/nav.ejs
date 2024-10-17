@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Redirection with EJS</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin: 10px 0;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        background-color: #333;
+        border: 2px solid white;
+        display: inline-block;
+        border-radius: 5px;
+      }
+      a:hover {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Project XSS</h1>
+
+    <h2>Choose a page</h2>
+    <ul>
+      <li><a href="/one">Go to Page 1</a></li>
+      <li><a href="/two">Go to Page 2</a></li>
+    </ul>
+  </body>
+</html>
