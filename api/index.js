@@ -15,16 +15,16 @@ app.set("view engine", "ejs")
 
 app.get('/', (req, res) => {
     console.log('nav page request received')
-    res.render("nav");
+    res.render("multisecond");
 })
 
-app.get('/one', (req, res) => {
-    res.render('one');
-})
+// app.get('/one', (req, res) => {
+//     res.render('one');
+// })
 
-app.get('/two', (req, res) => {
-    res.render('two');
-})
+// app.get('/two', (req, res) => {
+//     res.render('two');
+// })
 
 
 
